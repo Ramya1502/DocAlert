@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background: #173f7a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+
+.container {
+    width: 86%;
+    margin: 30px auto;
+}
+
+/* Welcome */
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.welcome h1 {
+    margin-bottom: 5px;
+    color: #173f7a;
+}
+
+.welcome p {
+    color: #777;
+}
+
+.date {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+/* Dashboard Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    border-left: 5px solid #173f7a;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 0;
+    color: #777;
+}
+
+.card.active {
+    border-left-color: green;
+}
+
+.card.warning {
+    border-left-color: orange;
+}
+
+.card.expired {
+    border-left-color: red;
+}
+
+/* Section */
+
+.section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #173f7a;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form input,
+.form select {
+    flex: 1;
+}
+
+button {
+    padding: 12px 20px;
+    background: #173f7a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0f2d59;
+}
+
+/* Search */
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 100%;
+    padding: 14px;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #173f7a;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f5f8ff;
+}
+
+/* Status */
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-warning {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-expired {
+    color: red;
+    font-weight: bold;
+}
+
+/* Delete */
+
+.delete-btn {
+    background: #dc3545;
+    padding: 7px 12px;
+}
+
+.delete-btn:hover {
+    background: #b02a37;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #173f7a;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #ffd54f;
+}
+
+#reminders {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.reminder-box {
+    padding: 20px;
+    background: #fff3cd;
+    border-left: 5px solid orange;
+    border-radius: 8px;
+}
+.reminder-item {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border-left: 5px solid orange;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.reminder-item {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 5px solid orange;
+    border-radius: 8px;
+    line-height: 1.8;
+}
